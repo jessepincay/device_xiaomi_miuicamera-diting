@@ -1,4 +1,4 @@
-From 5639536b1794a1e6b7f61a949e39f34d1b32ef49 Mon Sep 17 00:00:00 2001
+From ad507c5a2286c6a8dd8a5227b60e67cf593a05b4 Mon Sep 17 00:00:00 2001
 From: danielml <daniel@danielml.dev>
 Date: Fri, 19 Apr 2024 17:32:08 +0200
 Subject: [PATCH 02/10] Assume that mod_device is global
@@ -26,5 +26,5 @@ index 77fe65202..b3fe37366 100644
      sput-boolean v0, Lid/c;->E:Z
  
 -- 
-2.47.2
+2.49.0
 

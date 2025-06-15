@@ -1,4 +1,4 @@
-From f53e5d318a9db8ce9beee1ba1b8f560147e90c66 Mon Sep 17 00:00:00 2001
+From 910cb1b43eed1cf454217e0782a4594a5610631f Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Sat, 26 Apr 2025 17:58:26 +0200
 Subject: [PATCH 03/10] Add Ultra HDR heic configurations to
@@ -9,23 +9,26 @@ Since HyperOS 2, xiaomi has added these methods but guarded them for sdk 36 and 
 Android 15 QPR2 (still sdk 35) added these methods already, so enforce the usage of the new constructor.
 
 [1]: https://github.com/LineageOS/android_frameworks_base/commit/ba41b51131af923a797480a6e707d390d39852c2
+
+Signed-off-by: DqrKnzx <DavidYonatan9@hotmail.com>
 ---
  smali_classes4/lg/c.smali | 24 +-----------------------
  1 file changed, 1 insertion(+), 23 deletions(-)
 
 diff --git a/smali_classes4/lg/c.smali b/smali_classes4/lg/c.smali
-index f85f6142c..6397ad206 100644
+index 900b1ebfb..610ef87db 100644
 --- a/smali_classes4/lg/c.smali
 +++ b/smali_classes4/lg/c.smali
-@@ -553,31 +553,9 @@
+@@ -337,31 +337,9 @@
  .end method
  
- .method public static e()Z
+ .method public static c()Z
 -    .locals 2
--
++    .locals 1
+ 
 -    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 -
--    const/16 v1, 0x23
+-    const/16 v1, 0x21
 -
 -    if-gt v0, v1, :cond_1
 -
@@ -39,8 +42,7 @@ index f85f6142c..6397ad206 100644
 -
 -    :cond_0
 -    const/4 v0, 0x0
-+    .locals 1
- 
+-
 -    goto :goto_1
 -
 -    :cond_1
@@ -51,5 +53,5 @@ index f85f6142c..6397ad206 100644
      return v0
  .end method
 -- 
-2.47.2
+2.49.0
 

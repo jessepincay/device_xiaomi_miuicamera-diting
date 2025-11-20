@@ -5,9 +5,9 @@
 #
 
 # Inherit from the proprietary version
-include vendor/xiaomi/miuicamera-mondrian/BoardConfigVendor.mk
+include vendor/xiaomi/miuicamera-diting/BoardConfigVendor.mk
 
-MIUICAMERA_PATH := device/xiaomi/miuicamera-mondrian
+MIUICAMERA_PATH := device/xiaomi/miuicamera-diting
 
 # Properties
 TARGET_SYSTEM_PROP += $(MIUICAMERA_PATH)/system.prop
